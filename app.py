@@ -2,9 +2,10 @@ from flask import Flask, request, jsonify, render_template
 import pickle
 import numpy as np
 import string
-from nltk.corpus import stopwords
 import nltk
 nltk.download('punkt_tab')
+from nltk.corpus import stopwords
+nltk.download('stopwords')
 from nltk.stem.porter import PorterStemmer
 ps = PorterStemmer()
 
